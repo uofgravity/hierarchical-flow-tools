@@ -8,12 +8,12 @@ import hierarchical_flow_tools
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../../poplar/"))
+sys.path.insert(0, os.path.abspath("../hierarchical_flow_tools/"))
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'poplar'
+project = 'hierarchical-flow-tools'
 copyright = '2023, Christian Chapman-Bird'
 author = 'Christian Chapman-Bird'
 release = hierarchical_flow_tools.__version__
