@@ -17,3 +17,4 @@ Welcome to hierarchical-flow-tools's documentation!
    :maxdepth: 1
    :caption: Examples:
 
+   gaussian_example
