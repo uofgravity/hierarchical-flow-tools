@@ -1,5 +1,5 @@
 """
-Models to provide out-of-the-box use of hierarchical-flow-tools with other packages.
+Provides some out-of-the-box use of hierarchical-flow-tools with other packages.
 """
 
 from nessai.model import Model
@@ -9,18 +9,18 @@ import torch
 
 #nessai model class
 class NessaiModel(Model):
-    def __init__(self, names: list, bounds: list, flow_likelihood: FlowLikelihood):
-        """Model class for use with the `nessai` package for parameter estimation.
+    """Model class for use with the `nessai` package for parameter estimation.
 
-        Parameters
-        ----------
-        names : list
-            A list of label strings for each parameter.
-        bounds : dict
-            A dict of the prior bounds, assuming uniform priors on all parameters.
-        flowlike : FlowLikelihood
-            The FlowLikelihood class to use for the log_likelihood calls.
-        """
+    Parameters
+    ----------
+    names : list
+        A list of label strings for each parameter.
+    bounds : dict
+        A dict of the prior bounds, assuming uniform priors on all parameters.
+    flowlike : FlowLikelihood
+        The FlowLikelihood class to use for the log_likelihood calls.
+    """
+    def __init__(self, names: list, bounds: list, flow_likelihood: FlowLikelihood):
         self.names = names
         self.bounds = bounds
         self.flow_lhood = flow_likelihood

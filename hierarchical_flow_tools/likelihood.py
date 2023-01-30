@@ -7,7 +7,7 @@ import torch
 from glasflow.flows.base import Flow
 
 class FlowLikelihood:
-    """_summary_
+    """Class for streamlining log_likelihood calls with normalising flows, handling vectorisation and data rescaling.
 
     Parameters
     ----------
