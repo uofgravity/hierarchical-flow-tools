@@ -4,13 +4,13 @@
    contain the root `toctree` directive.
 
 Welcome to hierarchical-flow-tools's documentation!
-==================================
+===================================================
 
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
 
-   API reference </autoapi/hierarchical-flow-tools/index>
+   API reference </autoapi/hierarchical_flow_tools/index>
 
 
 .. toctree::
