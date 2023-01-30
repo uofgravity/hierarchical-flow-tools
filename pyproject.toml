@@ -1,0 +1,60 @@
+# -- build
+
+[build-system]
+requires = [
+  "setuptools",
+  "setuptools_scm[toml]",
+  "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hierarchical_flow_tools"
+description = "A lightweight toolkit for performing hierarchical inference with normalising flows"
+readme = "README.md"
+authors = [
+  { name = "Christian Chapman-Bird", email = "c.chapman-bird.1@research.gla.ac.uk" },
+]
+license = { text = "GPL-3.0-or-later" }
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Astronomy",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+
+# requirements
+requires-python = ">=3.8"
+dependencies = [
+  "numpy>=1.9",
+  "pandas",
+  "matplotlib>=2.0",
+  "seaborn",
+  "torch>=1.7.0",
+  "tqdm",
+  "glasflow",
+]
+
+# dynamic properties set by tools
+dynamic = [
+  "version",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/uofgravity/hierarchical-flow-tools/issues"
+"Source Code" = "https://github.com/uofgravity/hierarchical-flow-tools"
+
+[tool.setuptools]
+license-files = [ "LICENSE" ]
+
+[tool.setuptools_scm]
